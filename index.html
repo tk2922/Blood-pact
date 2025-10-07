@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Pact - Project Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #f0f0f0;
+      text-align: center;
+      background-color: #1a1a1a; /* Dark background */
+    }
+
+    /* Header */
+    header {
+      background-color: #8B0000; /* Deep red */
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 3px #000;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      color: #ff9999;
+    }
+
+    /* Main */
+    main {
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ff4d4d; /* Blood red */
+      text-shadow: 1px 1px 2px #000;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: #2a2a2a; /* Dark gray cards */
+      padding: 20px;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    }
+    .card a {
+      text-decoration: none;
+      color: #ff6666; /* Red links */
+      font-weight: bold;
+      display: block;
+      margin: 10px 0;
+    }
+    .card a:hover {
+      color: #ff0000;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #8B0000; /* Deep red */
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .cards { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Blood Pact</h1>
+    <p>Mini Portfolio of Project Files</p>
+  </header>
+
+  <main>
+    <h2>Project Documents</h2>
+    <div class="cards">
+      <div class="card">
+        <a href="high%20concept.pdf" target="_blank">High Concept PDF</a>
+      </div>
+      <div class="card">
+        <a href="Blood%20Pact.docx" target="_blank">Blood Pact Document</a>
+      </div>
+      <div class="card">
+        <a href="Meeting%20Notes%2027sept.docx" target="_blank">Meeting Notes</a>
+      </div>
+      <div class="card">
+        <a href="high%20concept.docx" target="_blank">High Concept DOCX</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Created for ART 311.29 | GitHub Pages
+  </footer>
+
+</body>
+</html>
