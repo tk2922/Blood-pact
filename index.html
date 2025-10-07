@@ -8,51 +8,96 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f5;
+      color: #333;
       text-align: center;
       margin: 0;
       padding: 0;
-      color: #333;
     }
     header {
       background-color: #8B0000;
       color: white;
       padding: 40px 20px;
     }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { margin-top: 10px; font-size: 1.2em; }
-    main { padding: 40px 20px; }
-    h2 { font-size: 2em; margin-bottom: 20px; }
-    .cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    main {
+      padding: 40px 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
     .card {
-      background: white; padding: 20px; width: 250px;
-      border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
-    .card a { text-decoration: none; color: #8B0000; font-weight: bold; display: block; margin: 10px 0; }
-    .card a:hover { color: #d40000; }
-    footer { margin-top: 60px; padding: 20px; background-color: #222; color: #ccc; font-size: 0.9em; }
-    @media (max-width: 600px) { .cards { flex-direction: column; align-items: center; } }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: #8B0000;
+      font-weight: bold;
+      display: block;
+      margin: 10px 0;
+    }
+    .card a:hover {
+      color: #d40000;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #222;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+    @media (max-width: 600px) {
+      .cards { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Blood Pact</h1>
-    <p>Project Portfolio</p>
+    <p>Mini Portfolio of Project Files</p>
   </header>
 
   <main>
-    <h2>Project Files</h2>
+    <h2>Project Documents</h2>
     <div class="cards">
-      <div class="card"><a href="high%20concept.pdf" target="_blank">High Concept PDF</a></div>
-      <div class="card"><a href="Blood%20Pact.docx" target="_blank">Blood Pact Document</a></div>
-      <div class="card"><a href="Meeting%20Notes%2027sept.docx" target="_blank">Meeting Notes</a></div>
+      <div class="card">
+        <a href="high%20concept.pdf" target="_blank">High Concept PDF</a>
+      </div>
+      <div class="card">
+        <a href="Blood%20Pact.docx" target="_blank">Blood Pact Document</a>
+      </div>
+      <div class="card">
+        <a href="Meeting%20Notes%2027sept.docx" target="_blank">Meeting Notes</a>
+      </div>
     </div>
   </main>
 
   <footer>
     Created for ART 311.29 | GitHub Pages
   </footer>
+
 </body>
 </html>
-
