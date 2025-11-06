@@ -3,116 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blood Pact - Project Portfolio</title>
+  <title>Blood Pact - Vampire Game</title>
   <style>
-    /* General Styles */
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      color: #f0f0f0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at top, #1a1a1a, #000000);
+      color: #eee;
       text-align: center;
-      background-color: #1a1a1a; /* Dark background */
     }
 
-    /* Header */
-    header {
-      background-color: #8B0000; /* Deep red */
-      padding: 40px 20px;
+    h1 {
+      font-size: 3em;
+      color: crimson;
+      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #8b0000, 0 0 30px #8b0000;
+      animation: flicker 1.5s infinite;
+      margin-bottom: 10px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-      color: #f0f0f0;
-      text-shadow: 1px 1px 3px #000;
+
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+      20%, 22%, 24%, 55% { opacity: 0.4; }
     }
-    header p {
+
+    p.subtitle {
       font-size: 1.2em;
-      margin-top: 10px;
-      color: #ff9999;
+      margin-bottom: 40px;
+      color: #bbb;
     }
 
-    /* Main */
-    main {
-      padding: 40px 20px;
-    }
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #ff4d4d; /* Blood red */
-      text-shadow: 1px 1px 2px #000;
+      color: #ff4444;
+      text-shadow: 0 0 5px #550000;
+      margin-top: 50px;
     }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+
+    ul.project-files {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .card {
-      background: #2a2a2a; /* Dark gray cards */
-      padding: 20px;
-      width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-      transition: transform 0.2s, box-shadow 0.2s;
+
+    ul.project-files li {
+      margin: 15px 0;
     }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
-    }
-    .card a {
+
+    ul.project-files li a {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #222;
+      border: 2px solid #550000;
+      border-radius: 8px;
+      color: #f4f4f4;
       text-decoration: none;
-      color: #ff6666; /* Red links */
       font-weight: bold;
-      display: block;
-      margin: 10px 0;
-    }
-    .card a:hover {
-      color: #ff0000;
+      box-shadow: 0 0 8px rgba(85,0,0,0.7);
+      transition: all 0.3s ease;
+      position: relative;
     }
 
-    /* Footer */
+    ul.project-files li a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 0;
+      background: crimson;
+      border-radius: 50%;
+      transition: height 0.3s ease;
+    }
+
+    ul.project-files li a:hover::after {
+      height: 10px;
+    }
+
+    ul.project-files li a:hover {
+      box-shadow: 0 0 16px crimson;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #8B0000; /* Deep red */
-      color: #ccc;
+      margin-top: 50px;
       font-size: 0.9em;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .cards { flex-direction: column; align-items: center; }
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Blood Pact</h1>
-    <p>Mini Portfolio of Project Files</p>
-  </header>
+  <h1>Blood Pact</h1>
+  <p class="subtitle">A vampire-themed social deduction game by Epic Gamers</p>
 
-  <main>
-    <h2>Project Documents</h2>
-    <div class="cards">
-      <div class="card">
-        <a href="high%20concept.pdf" target="_blank">High Concept PDF</a>
-      </div>
-      <div class="card">
-        <a href="Blood%20Pact.docx" target="_blank">Blood Pact Document</a>
-      </div>
-      <div class="card">
-        <a href="Meeting%20Notes%2027sept.docx" target="_blank">Meeting Notes</a>
-      </div>
-      <div class="card">
-        <a href="high%20concept.docx" target="_blank">High Concept DOCX</a>
-      </div>
-    </div>
-  </main>
+  <!-- Word Documents Section -->
+  <h2>Word Documents (.docx)</h2>
+  <ul class="project-files">
+    <li><a href="First%20Playable%20doc.docx">First Playable doc</a></li>
+    <li><a href="First%20Playable%20Findings%20and%20Feedback.docx">First Playable Findings and Feedback</a></li>
+    <li><a href="simple%20rules.docx">simple rules</a></li>
+    <li><a href="high%20concept.docx">high concept</a></li>
+    <li><a href="Blood%20Pact.docx">Blood Pact</a></li>
+    <li><a href="Meeting%20Notes%2027sept.docx">Meeting Notes</a></li>
+  </ul>
+
+  <!-- PDFs Section -->
+  <h2>PDF Documents (.pdf)</h2>
+  <ul class="project-files">
+    <li><a href="high%20concept.pdf">high concept</a></li>
+  </ul>
 
   <footer>
-    Created for ART 311.29 | GitHub Pages
+    Created for ART 311.29
   </footer>
 
 </body>
