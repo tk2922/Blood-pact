@@ -1,130 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blood Pact - Vampire Game</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: radial-gradient(circle at top, #1a1a1a, #000000);
-      color: #eee;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Pact Documents</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #0d0d0d, #1a0000);
+            color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-      font-size: 3em;
-      color: crimson;
-      text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #8b0000, 0 0 30px #8b0000;
-      animation: flicker 1.5s infinite;
-      margin-bottom: 10px;
-    }
+        header {
+            background-color: #800000;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
 
-    @keyframes flicker {
-      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
-      20%, 22%, 24%, 55% { opacity: 0.4; }
-    }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff0f0;
+            text-shadow: 2px 2px 5px #000;
+        }
 
-    p.subtitle {
-      font-size: 1.2em;
-      margin-bottom: 40px;
-      color: #bbb;
-    }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-    h2 {
-      color: #ff4444;
-      text-shadow: 0 0 5px #550000;
-      margin-top: 50px;
-    }
+        section {
+            margin-bottom: 40px;
+        }
 
-    ul.project-files {
-      list-style: none;
-      padding: 0;
-      max-width: 600px;
-      margin: 0 auto;
-    }
+        h2 {
+            border-bottom: 2px solid #ff0000;
+            padding-bottom: 5px;
+            color: #ffcccc;
+        }
 
-    ul.project-files li {
-      margin: 15px 0;
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-    ul.project-files li a {
-      display: inline-block;
-      padding: 12px 20px;
-      background: #222;
-      border: 2px solid #550000;
-      border-radius: 8px;
-      color: #f4f4f4;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 0 8px rgba(85,0,0,0.7);
-      transition: all 0.3s ease;
-      position: relative;
-    }
+        li {
+            background-color: rgba(44, 0, 0, 0.8);
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 10px;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
 
-    ul.project-files li a::after {
-      content: '';
-      position: absolute;
-      bottom: -6px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 4px;
-      height: 0;
-      background: crimson;
-      border-radius: 50%;
-      transition: height 0.3s ease;
-    }
+        li:hover {
+            transform: translateX(10px);
+            background-color: rgba(128, 0, 0, 0.9);
+        }
 
-    ul.project-files li a:hover::after {
-      height: 10px;
-    }
+        li::before {
+            content: "📄 ";
+        }
 
-    ul.project-files li a:hover {
-      box-shadow: 0 0 16px crimson;
-      color: #fff;
-      transform: scale(1.05);
-    }
+        .pdf::before {
+            content: "📑 ";
+        }
 
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+        .ppt::before {
+            content: "📊 ";
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Blood Pact Game Documents</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Word Documents</h2>
+            <ul>
+                <li><a href="Blood%20Pact%20game%20idea.docx">Blood Pact game idea</a></li>
+                <li><a href="MeetingNotes.docx">MeetingNotes</a></li>
+                <li><a href="Simple%20rules.docx">Simple rules</a></li>
+            </ul>
+        </section>
 
-  <h1>Blood Pact</h1>
-  <p class="subtitle">A vampire-themed social deduction game by Epic Gamers</p>
+        <section>
+            <h2>PDF Documents</h2>
+            <ul>
+                <li class="pdf"><a href="High%20Concept.pdf">High Concept</a></li>
+                <li class="pdf"><a href="First%20Playable%20Findings%20and%20Feedback.pdf">First Playable Findings and Feedback</a></li>
+                <li class="pdf"><a href="ART%20311%20Playable%20-%20Epic%20Gamers.pdf">ART 311 Playable - Epic Gamers</a></li>
+                <li class="pdf"><a href="Final%20Game%20Document.pdf">Final Game Document</a></li>
+            </ul>
+        </section>
 
-  <!-- Word Documents Section -->
-  <h2>Word Documents (.docx)</h2>
-  <ul class="project-files">
-    <li><a href="Blood%20Pact%20game%20idea.docx">Blood Pact Game Idea</a></li>
-    <li><a href="Meeting%20Notes%2027sept.docx">Meeting Notes</a></li>
-    <li><a href="simple%20rules.docx">Simple Rules</a></li>
-  </ul>
-
-  <!-- PDF Documents Section -->
-  <h2>PDF Documents (.pdf)</h2>
-  <ul class="project-files">
-    <li><a href="high%20concept.pdf">High Concept</a></li>
-    <li><a href="First%20Playable%20Findings%20and%20Feedback.pdf">First Playable Findings and Feedback</a></li>
-    <li><a href="ART%20311_Playable_Epic%20Gamers.pdf">ART 311 Playable - Epic Gamers</a></li>
-    <li><a href="Final%20Game%20Document.pdf">Final Game Document</a></li>
-  </ul>
-
-  <!-- PowerPoint Documents Section -->
-  <h2>PowerPoint Files (.pptx)</h2>
-  <ul class="project-files">
-    <li><a href="Blood%20Pact.pptx">Blood Pact Presentation</a></li>
-  </ul>
-
-  <footer>
-    Created for ART 311.29
-  </footer>
-
+        <section>
+            <h2>Presentation</h2>
+            <ul>
+                <li class="ppt"><a href="Blood%20Pact%20Presentation.pptx">Blood Pact Presentation</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
